@@ -1,0 +1,55 @@
+{
+  "collections": {
+    "users": {
+      "description": "Enterprise-level quantitative analysts and authorized users of the portfolio sandbox",
+      "fields": {
+        "uid": {
+          "type": "string",
+          "description": "Unique Google Auth user ID"
+        },
+        "email": {
+          "type": "string",
+          "description": "Associated Google primary email"
+        },
+        "displayName": {
+          "type": "string",
+          "description": "Readable display name of the user"
+        },
+        "photoURL": {
+          "type": "string",
+          "description": "Vibrant Google Account avatar URL"
+        },
+        "lastSeen": {
+          "type": "timestamp",
+          "description": "Timestamp of the user's latest portal interaction"
+        }
+      }
+    },
+    "configs": {
+      "parent": "users",
+      "description": "Stored math, aerodynamic UAV drones and cryptographic matrix configurations synced to the cloud",
+      "fields": {
+        "id": {
+          "type": "string",
+          "description": "Unique configuration ID"
+        },
+        "userId": {
+          "type": "string",
+          "description": "Owning user UID"
+        },
+        "type": {
+          "type": "string",
+          "description": "Config category (e.g. crypto, aero)"
+        },
+        "payload": {
+          "type": "string",
+          "description": "Saved parameters and values in a serialized custom text"
+        },
+        "timestamp": {
+          "type": "timestamp",
+          "description": "Creation or modification timestamp"
+        }
+      }
+    }
+  }
+}

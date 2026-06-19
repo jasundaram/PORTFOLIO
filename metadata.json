@@ -1,0 +1,6 @@
+{
+  "name": "Design & Photography Portfolio",
+  "description": "An exquisite, minimalist interactive portfolio website for showcasing creative designs and premium photography.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
