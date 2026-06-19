@@ -5,7 +5,7 @@ import devConfig from '../../firebase-applet-config.json';
 
 // Initialize Firebase App
 const app = initializeApp({
-  apiKey: devConfig.apiKey,
+  apiKey: (import.meta as any).env.VITE_FIREBASE_API_KEY || devConfig.apiKey,
   authDomain: devConfig.authDomain,
   projectId: devConfig.projectId,
   storageBucket: devConfig.storageBucket,
